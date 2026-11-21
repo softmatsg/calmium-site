@@ -1,0 +1,14 @@
+/* Copyright (c) 2026 Nikodem Tomczak, Thulge Labs */
+/* Calmium "Paper" palette (BRIEF.md §5.1). */
+:root { --bg: #F4F1EA; --ink: #1F2A36; --muted: #6B7682; --accent: #2F6FDE; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0E1E33; --ink: #D7E6FA; --muted: #8FA6C4; --accent: #5FA8FF; }
+}
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+h1 { font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.wordmark { font-size: 40px; margin-bottom: 0; }
+.muted { color: var(--muted); }
+a { color: var(--accent); }
+li { margin-bottom: 8px; }
